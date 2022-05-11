@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 16",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "/server",
+    "moduleResolution": "node",
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "./client"
+  ],
+  "include": [
+    "./server"
+  ]
+}

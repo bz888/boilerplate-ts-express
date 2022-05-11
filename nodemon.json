@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "node_modules",
+    "client"
+  ],
+  "watch": [
+    "server"
+  ],
+  "execMap": {
+    "ts": "ts-node"
+  }
+}
