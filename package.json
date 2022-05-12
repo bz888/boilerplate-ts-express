@@ -4,8 +4,9 @@
   "description": "boilerplate for typescript and nodejs",
   "main": "dist/src/server/index.js",
   "scripts": {
+    "start": "node server",
     "build": "run-p build:client build:server",
-    "build:client": "webpack",
+    "build:client": "npm run webpack -- --mode=production",
     "build:server": "tsc -p .",
     "dev": "run-p dev:server dev:client",
     "dev:client" : "webpack --watch",
