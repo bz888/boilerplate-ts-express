@@ -4,7 +4,7 @@ const path = require('path')
 console.log('prod webpack loaded')
 
 module.exports = {
-  entry: './dist/src/client/index.js',
+  entry: './dist/client/index.js',
   mode: 'production',
   output: {
     path: path.join(__dirname, 'public'),
