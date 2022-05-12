@@ -17,9 +17,9 @@ server.use(express.json())
 // DBConnect.dbConnection()
 
 // Send index.html on root request
-server.use(express.static(path.join(__dirname, 'public')))
+server.use(express.static(path.join(__dirname, '../../public')))
 server.get('*', (req: Request, res: Response) => {
-  res.sendFile(path.join(__dirname, './public/index.html'))
+  res.sendFile(path.join(__dirname, '../../public/index.html'))
   // res.send('Hello')
 })
 
