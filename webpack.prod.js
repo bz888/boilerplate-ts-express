@@ -4,7 +4,7 @@ const path = require('path')
 console.log('prod webpack loaded')
 
 module.exports = {
-  entry: './dist/client/index.js',
+  entry: './src/client/index.tsx',
   mode: 'production',
   output: {
     path: path.join(__dirname, 'public'),
@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        loader: 'babel-loader',
+        loader: 'ts-loader',
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         options: {
