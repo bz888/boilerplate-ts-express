@@ -20,6 +20,7 @@ server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
 server.get('*', (req: Request, res: Response) => {
   res.sendFile(path.join(__dirname, './public/index.html'))
+  // res.send('Hello')
 })
 
 // START THE SERVER
